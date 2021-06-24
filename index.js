@@ -8,3 +8,8 @@ const connection = mysql.createConnection({
     password: "Kenndall2017!",
     database:"employees"
 });
+
+connection.connect(function(err) {
+    if (err) throw err;
+    startUp();
+});
